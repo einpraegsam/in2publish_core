@@ -89,7 +89,7 @@ class ForeignEnvironmentService
                     break;
                 }
             }
-            $decodedDbInit = json_decode(base64_decode($encodedDbInit), true);
+            $decodedDbInit = (array)json_decode(base64_decode($encodedDbInit), true);
             $this->cache->set('foreign_db_init', $decodedDbInit, [], 86400);
         } else {
             $this->logger->error(
