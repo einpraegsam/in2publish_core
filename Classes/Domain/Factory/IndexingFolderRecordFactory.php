@@ -63,7 +63,7 @@ class IndexingFolderRecordFactory
      *
      * @var int
      */
-    protected $threshold = 150;
+    protected $threshold = 200;
 
     /**
      * @param ResourceStorage $localStorage
